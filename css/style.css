@@ -13,28 +13,35 @@ body {
     position: relative;
     height: 50px;
     width: 50px;
+/*
     left: 320px;
     top:750px;
+*/
     animation-name: wir;
-    animation-duration: 10s;
-    transition-duration: 10s;
-/*     translate(400px, 100px)    */
+    animation-duration: 20s;
+    animation-delay: -7.5s;
+    transition-duration: 20s;
+    transition: 5s;
+/*    transition: rotate(3600deg) translate(400px, 100px);*/
 }
 
 @keyframes wir {
     0%{
-        left: 320px;
-        top:750px;
+
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
-        transform: rotate(3600deg) translate(410px,710px);
+        transform: rotate(-3500deg) translate(1000px,1000px);
+        transform-origin: 710px, 410px;
         
     }
     100%{
         left: 710px;
         top: 410px;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
+        transition: 3s;
     }
     
 }
